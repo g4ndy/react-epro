@@ -23,4 +23,4 @@ Before the participant is able to fill any questionnaires assigned to him a logi
 
 ![image](https://user-images.githubusercontent.com/33530732/121014919-c5104180-c79a-11eb-872a-d31d08cd8777.png)
 
-(the information about required answer will be shown upon trying to submit the form while some fields has not been answered)
+(the information about required answer will be shown upon trying to submit the form while some fields were left unanswered)
