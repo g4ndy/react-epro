@@ -16,19 +16,18 @@ Main purpose of this app is to display, collect, process and save responses to b
 * OpenClinica needs to have the forms present on its side - the forms must be defined and setup in OC in order for the app to save them into the OC database.
 * The events and questions definitions as outputed from OpenClinica are used in JSON setup files of this app to properly connect 1:1 between OpenClinica's questions and questions shown and saved from the app into the OpenClinica database. 
 
-### Currently there are those types of questions supported:
+## Currently there are those types of questions supported:
 
-**VAS scales**
+### VAS scales
 
 ![image](https://user-images.githubusercontent.com/33530732/121013452-21726180-c799-11eb-9936-a15ab36d5371.png)
 
-**Radio buttons (works also as a trigger for show/hide another questions)**
+### Radio buttons (works also as a trigger for show/hide another questions)
 
 ![image](https://user-images.githubusercontent.com/33530732/121014111-e4f33580-c799-11eb-8f19-4d31e5c4555b.png)
-
 
 ### If the question is shown, it is then obligatory to answer it:
 
 ![image](https://user-images.githubusercontent.com/33530732/121014919-c5104180-c79a-11eb-872a-d31d08cd8777.png)
 
-(the information about required answer will be shown upon trying to submit the form while some fields were left unanswered)
+The information about required answer will be shown upon trying to submit the form while some fields were left unanswered.
