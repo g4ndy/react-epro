@@ -4,11 +4,16 @@ This is serverless Electronic Patient Reported Outcome (ePRO) react app built on
 
 Main purpose of this app is to display, collect, process and save responses to basic online form questionnaires (incl conditional show/hide logic, basic VAS scale). 
 
-# features
+## Features
 
-* Supoorts questionswith VAS scales
+* Supoorts questions with VAS scales
 * Setup files defining questionnaires, show/hide logic, additional question explanations etc. are prepared in human readable JSON files placed in root static folder.
 * Before the participant is able to fill any questionnaires assigned to him a login of responsible person is required. Afterwards, the participant can be left alone with the tablet on which he is filling the questionnaires without the danger of him modifying anything else. After finishing of the questionnaire, login of responsible person is required again.
+
+## Requirements
+* OpenClinica soap web service is currently used to authenticate the user, check and schedule the events and save the form answers into OpenClinica database. App does all the necesary xml parsing, client-side password encryption and checking.
+* OpenClinica needs to have the forms present on its side - IDs of questions from OpenClinica are used in JSON setup files of this app to properly connect between OpenClinica's question representation and questions shown and saved from within the app.
+* 
 
 ### Currently there are those types of questions supported:
 
