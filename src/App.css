@@ -1,0 +1,185 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/* styles for login form */
+.MainDiv {
+  /*min-width: 40%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); */
+  width: 85%;
+  border: 5px solid #4caf50;
+  border-radius: 20px;
+  padding: 10px;
+  margin: auto;
+}
+
+.headerDiv {
+  width: auto;
+  text-align: center;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"] {
+  width: 190px;
+  /* min-width: 100px; */
+  /* width: 100%; */
+  padding: 12px 20px;
+  margin: 5px 0 0 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+select {
+  width: 190px;
+  /* min-width: 200px;*/
+  /* width: 100%; */
+  padding: 12px 20px;
+  margin: 5px 0 0 0;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  min-width: 190px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.errorplaceholder {
+  color: red;
+  font-size: x-small;
+  /* margin-bottom: 10px; */
+  /* margin-right: 20px;
+  text-align: left; */
+}
+
+.warning,
+.thanks {
+  border-radius: 5px;
+  margin: 25px;
+  padding: 10px;
+}
+
+.warning {
+  color: red;
+  border: 1px solid #cc1a1a;
+}
+
+.thanks {
+  color: green;
+  border: 1px solid #6bc423;
+}
+
+.radioLabel {
+  display: block;
+  font-size: x-large;
+  margin-bottom: 0.2em;
+}
+
+.loginLabel {
+  display: block;
+  font-size: large;
+}
+
+.loginForm {
+  text-align: center;
+}
+
+.loginTable {
+  margin: auto;
+}
+
+.vasimg {
+  /* width: 100.5%;
+  margin-top: -26px;*/
+  width: 108%;
+  margin-top: -26px;
+  margin-left: -4%;
+}
+
+.questionHolder {
+  margin-top: 2em;
+  font-size: large;
+}
+
+.vas-right-text {
+  /* width: 30px;*/
+  float: right;
+  font-size: small;
+  font-style: italic;
+}
+
+.vas-left-text {
+  /* width: 30px;*/
+  float: left;
+  font-size: small;
+  font-style: italic;
+}
+
+.MuiSlider-marked {
+  margin-top: -15px;
+  margin-bottom: 20px;
+}
+
+#submitplaceholder {
+  text-align: center;
+  margin: 20px;
+}
+
+#loginplaceholder {
+  height: 80px;
+  margin-top: 20px;
+}
+
+#loginplaceholder img {
+  width: 136px;
+  margin: 0px 27px 0px 27px;
+  vertical-align: middle;
+}
+
+#loginplaceholder button {
+  width: 190px;
+}
+
+.questionText {
+  margin-bottom: 8px;
+}
+
+.polaritiesdiv {
+  height: 1.4em;
+}
+
+.explanation {
+  font-size: medium;
+  margin: 0px;
+  color: #0055ff;
+  font-style: italic;
+}
