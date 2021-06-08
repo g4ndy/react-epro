@@ -1,0 +1,63 @@
+{
+  "formVersionOid": "F_BASELINETABL_VER1",
+  "formVersionOid_explanation": "this is the form OID from openclinica",
+
+  "groupOid": "IG_BASEL_BASELINETABLET",
+  "groupOid_explanation": "this is the question group OID from openclinica",
+
+  "questions": [
+    {
+      "oid": "I_BASEL_TABVAVAS",
+      "questionText": "1) How would you rate your overall condition in the last 24 hours?",
+      "answers": {
+        "1": "< Not problem at All",
+        "2": "Extremely unbearable >"
+      },
+      "type": "vas",
+      "image": "good_to_bad.png",
+      "show": "true"
+    },
+    {
+      "oid": "I_BASEL_TABIM1",
+      "questionText": "4) What impact do your condition have on your interactions with others?",
+      "answers": {
+        "1": "no impact",
+        "2": "mild impact",
+        "3": "moderate impact",
+        "4": "severe impact"
+      },
+      "type": "radio",
+      "show": "true",
+      "header": "Life impact Questions"
+    }
+  ],
+
+  "questions_explanation": [
+    {
+      "oid": "this is oid of the question from openclinica, this question represents radio answers shown by default - show: true",
+      "questionText": "text of the question - should correspond to the one in oc, but any text will be accepted",
+      "answers": {
+        "1": "if question type is radio then you can have the numerical radio answers here",
+        "2": "answer 2 text",
+        "3": "answer 3 text",
+        "4": "and os on"
+      },
+      "type": "radio",
+      "show": "true"
+    },
+    {
+      "oid": "this represents conditionally shown (show: false) VAS question which will be dynamically shown only in case the radio question with oid I_BASEL_TABIM2 (parent: I_BASEL_TABIM2) is answered 1 (trigger: 1)",
+      "questionText": "3b) ho are you satisfied with a product? (note that for VAS type, 0.0 - 10.0 scale is currently used by default)",
+      "explanation": "0 means worst, 10 best",
+      "answers": {
+        "1": "< not at all",
+        "2": "extremely satisfied >"
+      },
+      "type": "vas",
+      "image": "bad_to_good.png",
+      "show": "false",
+      "parent": "I_BASEL_TABIM2",
+      "trigger": "1"
+    }
+  ]
+}

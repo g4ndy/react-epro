@@ -1,0 +1,30 @@
+{
+  "visitsOids": {
+    "SE_V1BREPRO": "V1 baseline",
+    "SE_V2BREPRO": "V2",
+    "SE_V3BREPRO": "V3 EoT",
+    "SE_V4BREPRO": "V4 FU"
+  },
+  "visitOids_explanation": {
+    "OID of the visit from Openclinica goes here": "name under which you want to display the visit in select visit field of login screen goes here"
+  },
+
+  "visitsTemplates": {
+    "SE_V1BREPRO": "v1_template.json",
+    "SE_V2BREPRO": "v2.json",
+    "SE_V3BREPRO": "v3.json",
+    "SE_V4BREPRO": "v2.json"
+  },
+  "visitsTemplates_explanation": {
+    "again the OID of the visit from Openclinica goes here": "the json definition of questions for this visit saved in the root public folder goes here, notice the same set of questionnaires is used both for v2 and v4 (v2.json)"
+  },
+
+  "loginPrefix": "0",
+  "loginPrefix_explanation": "this is a login name prefix number - currently numerical PIN is used for loging in simplification. First number from PIN sequence represents both the user name (prefixed by 0 since OC requires usernames to consist of 2+ characters) and the site number at the same time. User with PIN 8XXXX is thus user 08 on site SK-8 (subjectPrefix applied here) of OpenClinica saved into OC with password corresponding with pin part XXXX (without site/user number)",
+
+  "subjectPrefix": "SK-",
+  "subjectPrefix_explanation": "subject prefix is representing country code here. It is easier for the person responsible for login in to the questionnaire app just to provide subject number without country code in its prefix, in clinical studies, the subjects are usualy identified by code name like SK-001-003 : this means subject 003 from country SK, site 001",
+
+  "ocWsBaseUrl": "https://youropenclinica.com/ws/",
+  "ocWsBaseUrl_explanation": "this is the url where the OpenClinica webservices are running"
+}
