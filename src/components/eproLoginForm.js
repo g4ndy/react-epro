@@ -151,7 +151,7 @@ export default function EproLoginForm({ processLoginCredentials }) {
             </tbody>
           </table>
           <div id="loginplaceholder">
-            <img alt="logoneox" src="logo.png" />
+            <img alt="placeyourlogohere" src="logo.png" />
             <button type="submit" disabled={isSubmitting}>
               {/* disabled when isSubmitting should prevent repeted submits.. */}
               Přihlásit se
